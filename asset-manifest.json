@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/LilianaChauque/pw.front-end.git/static/css/main.073c9b0a.css",
+    "main.js": "/LilianaChauque/pw.front-end.git/static/js/main.1a303f94.js",
+    "static/js/787.2087afdc.chunk.js": "/LilianaChauque/pw.front-end.git/static/js/787.2087afdc.chunk.js",
+    "static/media/logo.svg": "/LilianaChauque/pw.front-end.git/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/LilianaChauque/pw.front-end.git/index.html",
+    "main.073c9b0a.css.map": "/LilianaChauque/pw.front-end.git/static/css/main.073c9b0a.css.map",
+    "main.1a303f94.js.map": "/LilianaChauque/pw.front-end.git/static/js/main.1a303f94.js.map",
+    "787.2087afdc.chunk.js.map": "/LilianaChauque/pw.front-end.git/static/js/787.2087afdc.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.073c9b0a.css",
+    "static/js/main.1a303f94.js"
+  ]
+}

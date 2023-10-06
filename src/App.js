@@ -1,25 +1,37 @@
-import logo from './logo.svg';
+import {useState} from 'react';
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+import { TempActual } from './Componentes/TempActual';
+import {Destacados} from './Componentes/Destacados';
+import {Hoy} from './Componentes/Hoy';
+import {MinMax} from './Componentes/MinMax';
+/*import  data from './Data.json';*/
+
+function App() { 
+   /* let TempActual = data["current_weather"]["temperature"];*/
+    
+    return (
+    <div className='contenedor'>
+        <div className='transporte'></div>
+        
+      
+        <div className="clima">
+           
+          
+           <TempActual/>
+           <MinMax/>
+           <div className='hoy'></div>
+           <Destacados/>
+        </div>
+        </div>
+           
+          
+        
+ 
+    
+
   );
 }
 
 export default App;
+

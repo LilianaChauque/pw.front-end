@@ -1,0 +1,34 @@
+
+h3{
+    color: rgb(74, 58, 58);
+    font-style: italic;
+    font-size: large;
+}
+.varios{
+    height: 100%;
+    width: 90%;
+     display: grid;
+     grid-template-columns:repeat(3, 1fr);
+     gap: 20px;
+     margin-left: 25px;
+     margin-bottom: 25px;
+  
+    
+  
+   
+    
+    }
+   
+   .caja{
+    
+    
+     border-radius: 5px;
+     border: 4cap rgb(86, 99, 112);
+     background-color: rgb(250, 229, 229);
+     font-size: medium;
+     font-style: initial;
+     text-align: center;
+   
+   }
+   
+   

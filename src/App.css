@@ -1,22 +1,35 @@
-
+.app{
+  margin: 10px;
+  background-color: brown;
+}
 .contenedor{
-  height: 100vh;
-  width: 100vw; 
+  height: 100%;
+  width: 100%; 
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   display:grid;
   grid-template-columns:  1fr 1fr;
-  
+ 
 }
 
 .transporte{
-  background-color: rgb(170, 161, 161);
+  background-color: rgba(205, 192, 192, 0.798);
   margin-right: 8px;
+  text-align: center;
 }
 .clima{
   
-  background-color: rgb(113, 230, 230);
+  background-color: rgb(106, 183, 238);
   display: grid;
-  grid-template-rows: 1fr 1fr 1fr 2fr;
+  grid-template-rows: 1fr 0.8fr 1fr 2.2fr;
 
 }
+
+.termometro-container {   
+  display:flex;
+  align-items: center;
+  height: 100%;
+  
+  
+}
+
 

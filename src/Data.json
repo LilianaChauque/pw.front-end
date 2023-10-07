@@ -18,11 +18,11 @@
     "hourly_units": {
         "time": "iso8601",
         "temperature_2m": "°C",
-        "relativehumidity_2m": "%",
-        "apparent_temperature": "°C",
+        "relativehumidity_2m": 35,
+        "apparent_temperature": 12.5,
         "precipitation_probability": "%",
         "cloudcover": "%",
-        "visibility": "m",
+        "visibility":  24140,
         "windspeed_10m": "km/h"
     },
     "hourly": {
@@ -253,11 +253,11 @@
         "temperature_2m_min": [
             14.1
         ],
-        "sunrise": [
-            "2023-09-29T06:56"
+        "sunrise": [ 
+            "06:56"
         ],
         "sunset": [
-            "2023-09-29T19:17"
+            "19:17"
         ],
         "uv_index_max": [
             7.45

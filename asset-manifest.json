@@ -1,15 +1,25 @@
 {
   "files": {
-    "main.css": "/LilianaChauque/pw.front-end/static/css/main.7eb2fd5c.css",
-    "main.js": "/LilianaChauque/pw.front-end/static/js/main.ca2cc2cd.js",
-    "static/js/787.2087afdc.chunk.js": "/LilianaChauque/pw.front-end/static/js/787.2087afdc.chunk.js",
-    "index.html": "/LilianaChauque/pw.front-end/index.html",
-    "main.7eb2fd5c.css.map": "/LilianaChauque/pw.front-end/static/css/main.7eb2fd5c.css.map",
-    "main.ca2cc2cd.js.map": "/LilianaChauque/pw.front-end/static/js/main.ca2cc2cd.js.map",
-    "787.2087afdc.chunk.js.map": "/LilianaChauque/pw.front-end/static/js/787.2087afdc.chunk.js.map"
+    "main.css": "/pw.front-end/static/css/main.8fce37e2.css",
+    "main.js": "/pw.front-end/static/js/main.d40f957b.js",
+    "static/js/787.2087afdc.chunk.js": "/pw.front-end/static/js/787.2087afdc.chunk.js",
+    "static/media/tiempo_clima.jpg": "/pw.front-end/static/media/tiempo_clima.483e4fce5e74902ccf8f.jpg",
+    "static/media/thermometer-colder.svg": "/pw.front-end/static/media/thermometer-colder.b930564a3e431185e50ffcfe28e23368.svg",
+    "static/media/thermometer-warmer.svg": "/pw.front-end/static/media/thermometer-warmer.6de36e5f9b33a2dfb35a35cc4cd3dcaa.svg",
+    "static/media/termometro.svg": "/pw.front-end/static/media/termometro.290e600eba5a64882dd587b4f7854613.svg",
+    "static/media/humidity.svg": "/pw.front-end/static/media/humidity.e11b2f5b3c042971acc5dcda127cc9e1.svg",
+    "static/media/uv-index.svg": "/pw.front-end/static/media/uv-index.b0d925d0e553a339a26220a1985b6efc.svg",
+    "static/media/sunset.svg": "/pw.front-end/static/media/sunset.7f6feb3d075d2793e454de0690d9685e.svg",
+    "static/media/sunrise.svg": "/pw.front-end/static/media/sunrise.896f5a009d92f80ea351ff3705b632fa.svg",
+    "static/media/horizon.svg": "/pw.front-end/static/media/horizon.a9e1fac69bf4d98037dbdb0a0b693bb8.svg",
+    "static/media/wind.svg": "/pw.front-end/static/media/wind.9cb5f330e4d8f7ec56301929e9846839.svg",
+    "index.html": "/pw.front-end/index.html",
+    "main.8fce37e2.css.map": "/pw.front-end/static/css/main.8fce37e2.css.map",
+    "main.d40f957b.js.map": "/pw.front-end/static/js/main.d40f957b.js.map",
+    "787.2087afdc.chunk.js.map": "/pw.front-end/static/js/787.2087afdc.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7eb2fd5c.css",
-    "static/js/main.ca2cc2cd.js"
+    "static/css/main.8fce37e2.css",
+    "static/js/main.d40f957b.js"
   ]
 }

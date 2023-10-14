@@ -1,27 +1,34 @@
-import React from "react";
+import React, { useState } from "react";
 import '../Styles/TempActual.css';
 import Termometro from 'react-thermometer-component'
 import data from '../Data.json'
-import tiempoImagen from '../imagenes/tiempo_clima.jpg'
+
 
 export function TempActual(props) {
-    let TempActual = data["current_weather"]["temperature"];
-    let fecha = data["daily"]["time"];
-
+   
+    const[tempActual, setTempActual] = useState(data.current_weather.temperature);
+    const[fecha, setFecha] = useState(data.current_weather.time);
+    const[hora, setHora] = useState(data.current_weather.time)
+    
+    const fechaHora = new Date(fecha);
+    const fechaFormateada = fechaHora.toLocaleDateString();
+    const horaFormateada = fechaHora.toLocaleTimeString().replace(/:00$/, "");
+    
+  
     return (
         <div className="dia">
             <div className="temp-container">
             <h1>TIEMPO Y CLIMA</h1>                             
-               <p className="dia">{fecha} </p>
+               <p className="dia">{fechaFormateada} {horaFormateada} </p>
                <div className="termometro-container">
                    <Termometro
                        theme="dark"
-                       value={TempActual}
+                       value={tempActual}
                        max="50"
                        steps="10"
                        format="ºC"
                        size="normal"
-                       height="250"
+                       height="190"
                    /> 
                                            
                 </div>

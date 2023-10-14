@@ -1,10 +1,11 @@
 .app{
   margin: 10px;
   background-color: brown;
+ 
 }
 .contenedor{
-  height: 100%;
-  width: 100%; 
+  height: 95vh;
+  width: 95vw; 
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   display:grid;
   grid-template-columns:  1fr 1fr;
@@ -12,17 +13,35 @@
 }
 
 .transporte{
+  text-shadow: 1px 1px 2px pink;
   background-color: rgba(205, 192, 192, 0.798);
   margin-right: 8px;
   text-align: center;
 }
 .clima{
-  
-  background-color: rgb(106, 183, 238);
+  text-shadow: 1px 1px 2px pink;
+  background-color:rgb(80, 172, 238);
   display: grid;
-  grid-template-rows: 1fr 0.8fr 1fr 2.2fr;
+  grid-template-rows: 0.8fr 0.8fr 1fr 2fr;
+  animation-name: cambio-color; 
+  animation-duration: 5s;
+  animation-timing-function: linear; 
+  animation-iteration-count: infinite; 
 
 }
+  @keyframes cambio-color {
+      0% {
+          background-color: rgb(80, 172, 238) ;
+      }
+      50% {
+          background-color: rgb(74, 162, 225);
+      }
+      100% {
+          background-color: rgb(68, 141, 193);
+      }
+  } 
+      
+
 
 .termometro-container {   
   display:flex;

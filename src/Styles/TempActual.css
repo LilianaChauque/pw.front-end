@@ -16,6 +16,6 @@
 }
 
 .termometro-container {
-    margin-right: 30px; /* Espacio entre la temperatura y el termómetro, ajusta según lo desees */
+    margin-right: 30px; 
     font-size: larger;
 }  

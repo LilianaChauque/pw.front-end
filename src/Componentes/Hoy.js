@@ -1,13 +1,13 @@
 import React, { useState } from "react";
 import {Bar} from 'react-chartjs-2';
 import { Chart as ChartJS} from "chart.js/auto";
-import  data from '../Data.json';
+
 
 export function Hoy(props) {
-
+ const weatherData = props.weatherData;
   
-  const horas = data.hourly.time;
-  const temperaturas = data.hourly.temperature_2m;
+  const horas = weatherData.hourly.time;
+  const temperaturas = weatherData.hourly.temperature_2m;
 
   
   const [hora, setHora] = useState(horas);

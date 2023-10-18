@@ -1,13 +1,14 @@
 import React, {useState} from "react";
 import '../Styles/MinMax.css';
-import data from '../Data.json'
 import termMaxImagen from '../imagenes/thermometer-warmer.svg'
 import termMinImagen from '../imagenes/thermometer-colder.svg'
-export function MinMax(props) {
-   
-    const [tempMax, setTempMax] = useState(data.daily.temperature_2m_max);
-    const [tempMin, setTempMin] = useState(data.daily.temperature_2m_min);
 
+export function MinMax(props) {
+   const weatherData = props.weatherData; 
+
+   const [tempMax, setTempMax] = useState(weatherData.daily.temperature_2m_max);
+   const [tempMin, setTempMin] = useState(weatherData.daily.temperature_2m_min); 
+    
     return (
         <div className="datos">
            

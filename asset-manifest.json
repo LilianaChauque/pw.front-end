@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/pw.front-end/static/css/main.f515f44a.css",
-    "main.js": "/pw.front-end/static/js/main.a080f051.js",
+    "main.css": "/pw.front-end/static/css/main.f73b0f49.css",
+    "main.js": "/pw.front-end/static/js/main.687035e2.js",
     "static/js/787.2087afdc.chunk.js": "/pw.front-end/static/js/787.2087afdc.chunk.js",
     "static/media/thermometer-colder.svg": "/pw.front-end/static/media/thermometer-colder.b930564a3e431185e50ffcfe28e23368.svg",
     "static/media/thermometer-warmer.svg": "/pw.front-end/static/media/thermometer-warmer.6de36e5f9b33a2dfb35a35cc4cd3dcaa.svg",
@@ -13,12 +13,12 @@
     "static/media/horizon.svg": "/pw.front-end/static/media/horizon.a9e1fac69bf4d98037dbdb0a0b693bb8.svg",
     "static/media/wind.svg": "/pw.front-end/static/media/wind.9cb5f330e4d8f7ec56301929e9846839.svg",
     "index.html": "/pw.front-end/index.html",
-    "main.f515f44a.css.map": "/pw.front-end/static/css/main.f515f44a.css.map",
-    "main.a080f051.js.map": "/pw.front-end/static/js/main.a080f051.js.map",
+    "main.f73b0f49.css.map": "/pw.front-end/static/css/main.f73b0f49.css.map",
+    "main.687035e2.js.map": "/pw.front-end/static/js/main.687035e2.js.map",
     "787.2087afdc.chunk.js.map": "/pw.front-end/static/js/787.2087afdc.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f515f44a.css",
-    "static/js/main.a080f051.js"
+    "static/css/main.f73b0f49.css",
+    "static/js/main.687035e2.js"
   ]
 }

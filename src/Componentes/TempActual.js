@@ -20,7 +20,7 @@ export function TempActual(props) {
     return (
         <div className="dia">
             <div className="temp-container">
-            <h1>TIEMPO Y CLIMA</h1>                             
+            <h1>TIEMPO Y CLIMA DE CÓRDOBA</h1>                             
                <p className="dia">{fechaFormateada} {horaFormateada} </p>
                <div className="termometro-container">
                    <Termometro
@@ -30,7 +30,7 @@ export function TempActual(props) {
                        steps="10"
                        format="ºC"
                        size="normal"
-                       height="190"
+                       height="160"
                    /> 
                                            
                 </div>

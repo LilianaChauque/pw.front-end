@@ -1,0 +1,97 @@
+/*//client_id: cb6b18c84b3b484d98018a791577af52
+//client_secret:3e3DB105Fbf642Bf88d5eeB8783EE1E6 del profe
+appi completa:
+https://apitransporte.buenosaires.gob.ar/colectivos/vehiclePositionsSimple?client_id=cb6b18c84b3b484d98018a791577af52&client_secret=3e3DB105Fbf642Bf88d5eeB8783EE1E6
+
+
+appi filtrada por route_id:
+'https://apitransporte.buenosaires.gob.ar/colectivos/vehiclePositionsSimple?route_id=${"1468", "1464", "1467", "451","53","132"}&client_id=cb6b18c84b3b484d98018a791577af52&client_secret=3e3DB105Fbf642Bf88d5eeB8783EE1E6'
+
+
+*/
+/* para marcar posision: 
+<Marker position={position}>
+      <Popup>
+        A pretty CSS3 popup. <br /> Easily customizable.
+      </Popup>
+    </Marker>
+    
+    <Marker position={[bondi["latitude"], bondi["longitude"]]}>
+*/
+
+/*  para filtrar esta funcion agarra una lista y nos devuelve un resultado que le corresponde a cada elemento de la lista en este caso transporte.
+{items.map((item,index)=>{
+    return <li key={index}>{item}</li>
+})} 
+ver el video como la modifica para lo que necesitamos datos transporte. */
+
+/*codigo para correr el codigo cada X segundos (milisegundos)
+
+useEffect(() => {
+    const interval = setInterval(() => {
+      setSeconds(seconds => seconds + 1);
+    }, 1000);
+    return () => clearInterval(interval);
+  }, []); 
+  en vez de 1000 hay que poner 31000
+es el mismo useEfect
+useEffect(() => {
+    const interval = setInterval(() => {
+      // ACÁ 
+    }, 1000);
+    return () => clearInterval(interval);
+  }, []);
+
+  seleccionando route_id:
+
+  useEffect(() => {
+    setTimeout(){
+      llamadaApi(("https://...{route_id}"))
+    }[31000]
+  }, []);
+
+  useEffect(() => {
+      llamadaApi()
+  }, [lineaColectivo]);
+*/
+/*la llamada a una appi sienpre tiene esta estructura:
+useEffect(() => {
+  const fetchData = async () => {
+    try {
+      const response = await fetch('URL_DE_LA_API');
+      if (!response.ok) {
+        throw new Error('No se pudo obtener la información');
+      }
+      const jsonData = await response.json();
+      setData(jsonData);
+    } catch (error) {
+      console.error('Error:', error);
+    }
+  };
+
+  fetchData();
+}, []);*/
+
+/*appi, fetch:
+ useEffect(() => {
+    const [loading, setLoading] = useState(true)
+    const transporteData = async () => {
+      try {
+        const response = await fetch('https://apitransporte.buenosaires.gob.ar/colectivos/vehiclePositionsSimple?client_id=cb6b18c84b3b484d98018a791577af52&client_secret=3e3DB105Fbf642Bf88d5eeB8783EE1E6');
+        if (!response.ok) {
+          throw new Error('No se pudo obtener la información');
+        }
+        const jsonData = await response.json();
+        setData(jsonData);
+        setLoading(false);
+      } catch (error) {
+        console.error('Error al obtener datos de la API:', error);
+        setLoading(false)
+      }
+    };
+    transporteData();
+
+   /* setTimeout() {
+      llamadaApi(("https://apitransporte.buenosaires.gob.ar/colectivos/vehiclePositionsSimple?client_id=cb6b18c84b3b484d98018a791577af52&client_secret=3e3DB105Fbf642Bf88d5eeB8783EE1E6"));
+    }[31000]*/
+ /* }, []);*/

@@ -1,7 +1,7 @@
 import {useState,useEffect} from 'react';
 import './App.css';
 import { Clima } from './Componentes/Clima';
-import { Transport } from './Componentes/transtport'; 
+import { Transport } from './Componentes/transport'; 
 
 function App() {  
  

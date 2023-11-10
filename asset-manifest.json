@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/pw.front-end/static/css/main.d92d4a0e.css",
-    "main.js": "/pw.front-end/static/js/main.5b3b1dc4.js",
+    "main.css": "/pw.front-end/static/css/main.bb5a8399.css",
+    "main.js": "/pw.front-end/static/js/main.5f2b3cc5.js",
     "static/js/787.2087afdc.chunk.js": "/pw.front-end/static/js/787.2087afdc.chunk.js",
     "static/media/bus.png": "/pw.front-end/static/media/bus.c89b0d2dd67b3232f51a.png",
     "static/media/thermometer-colder.svg": "/pw.front-end/static/media/thermometer-colder.b930564a3e431185e50ffcfe28e23368.svg",
@@ -14,12 +14,12 @@
     "static/media/horizon.svg": "/pw.front-end/static/media/horizon.a9e1fac69bf4d98037dbdb0a0b693bb8.svg",
     "index.html": "/pw.front-end/index.html",
     "static/media/wind.svg": "/pw.front-end/static/media/wind.9cb5f330e4d8f7ec56301929e9846839.svg",
-    "main.d92d4a0e.css.map": "/pw.front-end/static/css/main.d92d4a0e.css.map",
-    "main.5b3b1dc4.js.map": "/pw.front-end/static/js/main.5b3b1dc4.js.map",
+    "main.bb5a8399.css.map": "/pw.front-end/static/css/main.bb5a8399.css.map",
+    "main.5f2b3cc5.js.map": "/pw.front-end/static/js/main.5f2b3cc5.js.map",
     "787.2087afdc.chunk.js.map": "/pw.front-end/static/js/787.2087afdc.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d92d4a0e.css",
-    "static/js/main.5b3b1dc4.js"
+    "static/css/main.bb5a8399.css",
+    "static/js/main.5f2b3cc5.js"
   ]
 }

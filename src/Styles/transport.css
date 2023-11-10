@@ -5,7 +5,7 @@
     margin-right: 20px;
     border-radius: 7px;
     cursor: pointer;
-    background-color: rgb(231, 209, 186);
+    background-color: rgb(226, 197, 166);
 }
 
 .destino{
@@ -18,7 +18,7 @@
 
 }
 
-.linea.dark-mode {
+.dark-mode.linea {
     align-items:flex-start;
     margin-bottom: 20px;
     margin-right: 20px;
@@ -28,7 +28,7 @@
     color: #fff; 
   }
   
-  .destino.dark-mode{
+  .dark-mode.destino {
     align-items:flex-start;
     margin-bottom: 20px;
     margin-right: 20px;

@@ -1,11 +1,11 @@
 .app{
-  margin: 10px;
+ 
  background-color: brown;
  
 }
 .contenedor{
-  height: 100%;
-  width: 100%; 
+  height: 100vh;
+  width: 100vw; 
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   display:grid;
   grid-template-columns:  1fr 1fr;
@@ -20,18 +20,19 @@
   font-size: larger;
   
 }
-.clima{
-  margin: 0 px;
+.clima {
+  background-color: rgb(88, 168, 224);
+   margin: 0 px;
   text-shadow: 1px 1px 2px pink; 
   display: grid;
   grid-template-rows: 1fr 1fr 1fr 2fr;
-  animation-name: cambio-color; 
+ /* animation-name: cambio-color; 
   animation-duration: 5s;
   animation-timing-function: linear; 
-  animation-iteration-count: infinite; 
+  animation-iteration-count: infinite; */
 
 }
-  @keyframes cambio-color {
+ /* @keyframes cambio-color {
       0% {
           background-color: rgb(80, 172, 238) ;
       }
@@ -41,7 +42,7 @@
       100% {
           background-color: rgb(68, 141, 193);
       }
-  } 
+  } */
       
 
 
@@ -55,7 +56,7 @@
 
 .leaflet-container {
   width: 50vw; 
-  height: 50vh;
+  height: 85vh;
   align-items:flex-start;
 }
 
@@ -65,27 +66,30 @@
   color: #fff; 
 }
 
-.app.dark-mode {
+.dark-mode.app {
   background-color: #222; 
   color: #fff;
 }
-.transporte.dark-mode {
+.dark-mode.transporte {
   background-color: rgba(65, 60, 60, 0.798); 
   color: #fff; 
   text-shadow: 1px 1px 2px rgb(12, 12, 12); 
+   margin-right: 8px;
+  text-align: center;
+  font-size: larger;
 }
 
-.clima.dark-mode {
-  background-color: #444; 
+.dark-mode.clima {
+  background-color: rgb(34, 64, 85); 
   color: #fff; 
   text-shadow: 1px 1px 2px rgb(12, 12, 12); 
-  animation-name: cambio-color; 
+  /*animation-name: cambio-color; 
   animation-duration: 5s;
   animation-timing-function: linear; 
-  animation-iteration-count: infinite; 
+  animation-iteration-count: infinite; */
 
 }
-  @keyframes cambio-color {
+  /*@keyframes cambio-color {
       0% {
           background-color: rgb(34, 64, 85) ;
       }
@@ -95,9 +99,9 @@
       100% {
           background-color: rgb(2, 39, 65);
       }
-}
+}*/
 
-.leaflet-container.dark-mode {
+.dark-mode.leaflet-container {
   background-color: #685a5a; 
   color: #fff; 
 }

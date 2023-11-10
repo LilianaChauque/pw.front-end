@@ -13,10 +13,9 @@
    /* background-color: rgb(241, 162, 133);*/
     font-size: small;
     font-style: initial;
-    text-align: center;
-    font-size: large;
-
+    text-align: center;   
    }
+
   .temp2{
     
     margin-left: 18px;
@@ -24,6 +23,6 @@
     /*background-color: rgb(129, 175, 197);  */
     font-style: initial;
     text-align: center;
-    font-size: large;
+    font-size: small;
 
   }

@@ -51,7 +51,7 @@ useEffect(() => {
   }, []);
 
   useEffect(() => {
-      llamadaApi()
+      fetch()
   }, [lineaColectivo]);
 */
 /*la llamada a una appi sienpre tiene esta estructura:
@@ -95,3 +95,17 @@ useEffect(() => {
       llamadaApi(("https://apitransporte.buenosaires.gob.ar/colectivos/vehiclePositionsSimple?client_id=cb6b18c84b3b484d98018a791577af52&client_secret=3e3DB105Fbf642Bf88d5eeB8783EE1E6"));
     }[31000]*/
  /* }, []);*/
+
+ /* como saber la geolocalización del que busca el colectivo:
+ 
+ navigator.geolocation.getCurrentPosition((position) => {
+    let latitud = position.coords.latitude;
+    let longitud = position.coords.longitude;
+  }); */
+
+  
+  /*function SetViewOnClick() {
+    const map = useMap();
+    map.setView(posicion, 10);
+    return null;
+  };*/

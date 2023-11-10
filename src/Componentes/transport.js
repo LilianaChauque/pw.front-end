@@ -6,7 +6,7 @@ import bus2Icon from '../imagenes/bus2.png';
 import 'leaflet/dist/leaflet.css';
 import L from 'leaflet';
 
-export function Transport() {
+export function Transport({ isDarkMode }) {
   const position = [-34.6131,	-58.37723];
  
   const [busLinea, setBusLinea] = useState([]);
@@ -16,7 +16,7 @@ export function Transport() {
   const [selectedLineBusPositions, setSelectedLineBusPositions] = useState([])
   const [transporteData, setTransporteData] = useState(null);
   const [loading, setLoading] = useState(true);
-  
+  const [error, setError] = useState(null);
 
   useEffect(() => {
 fetch('https://apitransporte.buenosaires.gob.ar/colectivos/vehiclePositionsSimple?client_id=cb6b18c84b3b484d98018a791577af52&client_secret=3e3DB105Fbf642Bf88d5eeB8783EE1E6')
@@ -107,8 +107,11 @@ console.log(destinationsForLine);
   
   if (loading) {   
     
-        return <p>Loading data...</p>;
+      return <p>Loading data...</p>;
       } 
+  if (error) {
+      return <div>{error}</div>;
+      }    
       
   if (!transporteData) {
     return <div>No hay datos disponibles</div>;
@@ -116,8 +119,9 @@ console.log(destinationsForLine);
  
   return (
     <>
+      <div className={`transporte ${isDarkMode ? 'dark-mode' : ''}`}>
       <h1>COLECTIVOS de Bs.As.</h1>
-      <select className="linea" id="lineaBus" value={selectedLinea} onChange={handleSelectChange}>
+      <select className={`linea" ${isDarkMode ? 'dark-mode' : ''}`} id="lineaBus" value={selectedLinea} onChange={handleSelectChange}>
         <option value="">Seleccionar línea</option>
         {busLinea.map((line) => (
           <option key={line} value={line}>
@@ -126,7 +130,7 @@ console.log(destinationsForLine);
         ))}
       </select>
 
-      <select className="destino" id="destinoBus" value={selectedDestination} onChange={handleDestinationChange}>
+      <select className={`destino ${isDarkMode ? 'dark-mode' : ''}` }id="destinoBus" value={selectedDestination} onChange={handleDestinationChange}>
         <option value="">Seleccionar destino</option>
         {destinations.map((destino) => (
           <option key={destino} value={destino}>
@@ -159,6 +163,7 @@ console.log(destinationsForLine);
              )}
              
         </MapContainer>
+      </div>
       </div>
     </>
   );

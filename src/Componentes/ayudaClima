@@ -1,0 +1,37 @@
+para usar use context:
+
+GUIDO IVETTA 19:40
+import { useContext } from 'react';
+const theme = useContext(ThemeContext);
+<ThemeContext.Provider value="dark">
+      <Form />
+    </ThemeContext.Provider>
+
+
+GUIDO IVETTA 19:41
+const theme = useContext(ThemeContext);
+const ThemeContext = createContext('light');
+
+
+GUIDO IVETTA 19:42
+////////////////
+function App() {
+  const [theme, setTheme] = useState('light');
+  // ...
+  return (
+    <ThemeContext.Provider value={theme}>
+      <Page />
+    </ThemeContext.Provider>
+  );
+}
+
+
+GUIDO IVETTA 19:44
+import { createContext } from 'react';
+
+ubicación actual:
+
+navigator.geolocation.getCurrentPosition(function(position) {
+    console.log("Latitude is :", position.coords.latitude);
+    console.log("Longitude is :", position.coords.longitude);
+  });

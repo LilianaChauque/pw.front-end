@@ -1,11 +1,11 @@
 .app{
   margin: 10px;
-  background-color: brown;
+ background-color: brown;
  
 }
 .contenedor{
-  height: 100vh;
-  width: 100vw; 
+  height: 100%;
+  width: 100%; 
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   display:grid;
   grid-template-columns:  1fr 1fr;
@@ -21,11 +21,10 @@
   
 }
 .clima{
-  text-shadow: 1px 1px 2px pink;
-  background-color:rgb(80, 172, 238);
+  margin: 0 px;
+  text-shadow: 1px 1px 2px pink; 
   display: grid;
-  grid-template-rows: 0.8fr 0.8fr 1fr 2fr;
-
+  grid-template-rows: 1fr 1fr 1fr 2fr;
   animation-name: cambio-color; 
   animation-duration: 5s;
   animation-timing-function: linear; 
@@ -59,4 +58,50 @@
   height: 50vh;
   align-items:flex-start;
 }
+
+
+.dark-mode {
+  background-color: #333; 
+  color: #fff; 
+}
+
+.app.dark-mode {
+  background-color: #222; 
+  color: #fff;
+}
+.transporte.dark-mode {
+  background-color: rgba(65, 60, 60, 0.798); 
+  color: #fff; 
+  text-shadow: 1px 1px 2px rgb(12, 12, 12); 
+}
+
+.clima.dark-mode {
+  background-color: #444; 
+  color: #fff; 
+  text-shadow: 1px 1px 2px rgb(12, 12, 12); 
+  animation-name: cambio-color; 
+  animation-duration: 5s;
+  animation-timing-function: linear; 
+  animation-iteration-count: infinite; 
+
+}
+  @keyframes cambio-color {
+      0% {
+          background-color: rgb(34, 64, 85) ;
+      }
+      50% {
+          background-color: rgb(26, 52, 71);
+      }
+      100% {
+          background-color: rgb(2, 39, 65);
+      }
+}
+
+.leaflet-container.dark-mode {
+  background-color: #685a5a; 
+  color: #fff; 
+}
+
+
+
 

@@ -1,18 +1,18 @@
 .dia{
 
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: larger;
+    font-size: medium;
     
 }
 
 .temp-container {
     display: flex;
     align-items: center; 
-    gap:25px;
+    gap:10px;
 }
 
 .temp {
-    font-size: 30px; 
+    font-size: 20px; 
 }
 
 .termometro-container {

@@ -13,11 +13,11 @@ export function MinMax(props) {
         <div className="datos">
            
                <div className="temp1"> 
-                  <p>Temperatura Máxima º C</p>
+                  <p>Temp. Máxima º C</p>
                   <img className="term_Max" src={termMaxImagen} alt={"max"} style={{height: '50%', width: '50%'}}/>
                   <p className="maxima">{tempMax}</p>            
                </div>
-               <div className="temp2"> <p>Temperatura Mínima º C</p>
+               <div className="temp2"> <p>Temp. Mínima º C</p>
                <img className="term_Min" src={termMinImagen} alt={"min"} style={{height: '50%', width: '50%'}}/>
             <p className="minima">{tempMin}</p>
                </div>
